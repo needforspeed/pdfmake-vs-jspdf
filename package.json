@@ -1,0 +1,23 @@
+{
+  "name": "pdfmake-vs-jspdf",
+  "version": "1.0.0",
+  "description": "pdfmake vs jspdf",
+  "main": "report.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/needforspeed/pdfmake-vs-jspdf.git"
+  },
+  "keywords": [
+    "pdfmake",
+    "jspdf"
+  ],
+  "author": "Yuncong Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/needforspeed/pdfmake-vs-jspdf/issues"
+  },
+  "homepage": "https://github.com/needforspeed/pdfmake-vs-jspdf#readme"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "pdfmake-vs-jspdf",
+  "description": "compare performance between pdfmake and jsPDF",
+  "main": "report.js",
+  "authors": [
+    "Yuncong Zhang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "pdfmake",
+    "jsPDF"
+  ],
+  "homepage": "https://github.com/needforspeed/pdfmake-vs-jspdf",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-ui-grid": "~3.0.6",
+    "bootstrap-css": "~3.3.6",
+    "file-saver": "~1.3.2",
+    "pdfmake-dist": "^0.1.30",
+    "jspdf-autotable": "^2.0.33"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Report</title>
+
+  <!-- libs -->
+  <link rel="stylesheet" type="text/css" href="/bower_components/angular-ui-grid/ui-grid.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-css/css/bootstrap.min.css">
+  <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="/bower_components/angular-ui-grid/ui-grid.min.js"></script>
+  <script type="text/javascript" src="/bower_components/pdfmake-dist/build/pdfmake.min.js"></script>
+  <script type="text/javascript" src="/bower_components/pdfmake-dist/build/vfs_fonts.js"></script>
+  <script type="text/javascript" src="/bower_components/jspdf/dist/jspdf.min.js"></script>
+  <script type="text/javascript" src="/bower_components/jspdf-autotable/dist/jspdf.plugin.autotable.js"></script>
+
+  <script type="text/javascript" src="/report.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+  <div class="container">
+    <h1 class="text-center">Report</h1>
+    <div us-spinner></div>
+    <div class="row">
+      <div class="col-lg-12 grid" ui-grid="gridOptions" ui-grid-exporter></div>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-12">
+        <button type="button" class="btn btn-default" ng-click="exportAllAsPdf(gridOptions)">Export all data as pdf</button>
+      </div>
+    </div>
+  </div>
+</html>
